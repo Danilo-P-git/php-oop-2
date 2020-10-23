@@ -30,11 +30,11 @@ class Impiegato extends User
 
   public function impiegatoData ($_impiegato) {
     $this->impiegato = $_impiegato;
-  };
+  }
 };
-$impiegato1 = new User("d_patane", "danilopatane98@tiscali.it", "passwordDanilo");
-$impiegato2 = new User("francsar", "francescosardo@hotmail.com", "passwordFra");
-$impiegato3 = new User("giusepfra", "giuseppe.francesco@gmail.com", "passwordGiuseppe");
+$impiegato1 = new Impiegato("d_patane", "danilopatane98@tiscali.it", "passwordDanilo");
+$impiegato2 = new Impiegato("francsar", "francescosardo@hotmail.com", "passwordFra");
+$impiegato3 = new Impiegato("giusepfra", "giuseppe.francesco@gmail.com", "passwordGiuseppe");
 $impiegato1-> impiegatoData("Impiegato");
 $impiegato2-> impiegatoData("Impiegato");
 $impiegato3-> impiegatoData("Impiegato");
@@ -57,7 +57,7 @@ $impiegati = [$impiegato1, $impiegato2, $impiegato3];
        <div class="col-4">
          <h2>USERNAME</h2>
          <?php foreach ($impiegati as $lavoratori ){?>
-         <p><?php echo $lavoratori->username ?> <span></span>  </p>
+         <p><?php echo $lavoratori->username ?> <span><?php echo $lavoratori->impiegato ?></span>  </p>
        <?php } ?>
        </div>
        <div class="col-4">
