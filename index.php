@@ -36,7 +36,7 @@ $impiegato1 = new Impiegato("d_patane", "danilopatane98@tiscali.it", "passwordDa
 $impiegato2 = new Impiegato("francsar", "francescosardo@hotmail.com", "passwordFra");
 $impiegato3 = new Impiegato("giusepfra", "giuseppe.francesco@gmail.com", "passwordGiuseppe");
 $impiegato1-> impiegatoData("Impiegato");
-$impiegato2-> impiegatoData("Impiegato");
+$impiegato2-> impiegatoData("non impiegato");
 $impiegato3-> impiegatoData("Impiegato");
 $impiegati = [$impiegato1, $impiegato2, $impiegato3];
 
