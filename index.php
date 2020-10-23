@@ -32,9 +32,9 @@ class Impiegato extends User
     $this->impiegato = $_impiegato;
   };
 };
-$impiegato1 = new User("d_patane", "danilopatane98@tiscali.it", "passwordDanilo", "impiegato");
-$impiegato2 = new User("francsar", "francescosardo@hotmail.com", "passwordFra", "non impiegato");
-$impiegato3 = new User("giusepfra", "giuseppe.francesco@gmail.com", "passwordGiuseppe", "impiegato");
+$impiegato1 = new User("d_patane", "danilopatane98@tiscali.it", "passwordDanilo");
+$impiegato2 = new User("francsar", "francescosardo@hotmail.com", "passwordFra");
+$impiegato3 = new User("giusepfra", "giuseppe.francesco@gmail.com", "passwordGiuseppe");
 $impiegato1-> impiegatoData("Impiegato");
 $impiegato2-> impiegatoData("Impiegato");
 $impiegato3-> impiegatoData("Impiegato");
